@@ -23,16 +23,20 @@ body {
     background: #fff;
     padding: 0;
     margin: 0;
+    font-family:Geneva, Arial, Helvetica, sans-sefir;
 }
 .container-fluid .row {
     margin-top: 60px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: #fafafa;
 }
 #challenge {
-    padding: 0;
+    padding: 0;  
+    min-width: 460px;
 }
 #table { 
     padding: 0;
+    min-width: 460px;
 }
 /*navbar*/
 .navbar {
@@ -42,6 +46,9 @@ body {
 }
 .navbar-header {
     width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
 }
 #logo {
     padding: 15px;
@@ -58,34 +65,63 @@ body {
 #profile-logged-in {
     color: #fff;
     padding-right: 3px;
-    font-family: "AvenirNextLTPro Regular";
+    font-family: "AvenirNextLTPro Regular", Arial, Helvetica, sans-sefir;
 }
 /*left col*/
- 
 #caption {
-    width: 100%;
-    height: 100px;
-    background: #364442;
-    padding: 0 20px 0 140px;
+    padding: 0;
+    margin: 0;
+    height: 100px; 
+} 
+#caption .row {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    background: #364442; 
     line-height: 100px;
 }
-
-#caption h1, #caption span {
-    font-family: "AvenirNextLTPro Medium";
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 32px; 
+#caption .col-md-9 {
+    padding: 0;
+    margin: 0;
+    vertical-align: middle !important;
+    text-align: right;
+    line-height: 100px;
+}
+#caption .col-md-3 {
+    padding: 0;
+    margin: 0;
+    line-height: 100px;
+    text-align: right;
 }
 #caption h1 {
-    display: inline;
+    padding: 0;
+    margin: 0 20px 0 0;
+    display: inline-block;
+    text-align: center;
+    font-family: "AvenirNextLTPro Medium", Arial, Helvetica, sans-sefir;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 100px;
 }
 #caption img {
-    padding-right: 10px;
-    vertical-align: middle; 
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
-#ask {
-    float: right;  
+#caption a {
+    font-family: "AvenirNextLTPro Medium", Arial, Helvetica, sans-sefir;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-right: 30px;
 }
+#caption a:hover {
+    font-family: "AvenirNextLTPro Medium", Arial, Helvetica, sans-sefir;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+/*left*/
 .title-game {
     height: 70px;
     border-bottom: 1px solid #e6e6e6;
@@ -94,7 +130,7 @@ body {
     padding-top: 30px;
 }
 .title-game h3 {
-    font-family: "AvenirNextLTPro Medium";
+    font-family: "AvenirNextLTPro Medium", Arial, Helvetica, sans-sefir;
     color: #546a67;
     text-transform: uppercase;
     font-size: 24px;
@@ -114,7 +150,7 @@ body {
     line-height: 40px;
 }
 .button-game-left .btn-default {
-    font-family: "AvenirNextLTPro Regular";
+    font-family: "AvenirNextLTPro Regular", Arial, Helvetica, sans-sefir;
     font-size: 24px;
     color: #808080;
     text-transform: uppercase;
@@ -123,20 +159,95 @@ body {
     vertical-align: middle;
     padding: 0 10px;
 }
-.square-big {
+div.score-game-big-left {
+    display: inline-block
+}
+div.score-game-big-left div {
+    display: inline-block;
+}
+div .score-game-big-left { 
+    margin: 0 auto;
+    padding: 0; 
+}
+.score-game-big-left div:nth-of-type(2) {
+    padding: 0 40px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    font-family: "AvenirNextLTPro Medium", Arial, Helvetica, sans-sefir;
+    color: #546a67;  
+    font-size: 100px;
+    line-height: 100px;
+}
+.score-game-big-left .square-big {
     height: 95px;
     width: 95px;
     border-radius: 7px;
-    text-align: center;
-    line-height: 40px;
-    font-family: "AvenirNextLTPro Bold";
+    line-height: 95px;
+    font-family: "AvenirNextLTPro Bold", Arial, Helvetica, sans-sefir;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 48px;
     color: #fff;
     margin: 0;
-    vertical-align: middle;
-    margin-bottom: 15px;
-    display: inline-block;
+}
+.score-game-big-left .point {
+    padding: 0 20px;
+}
+.time-time-big {
+    font-family: "AvenirNextLTPro Regular", Arial, Helvetica, sans-sefir;
+    font-weight: bold;
+    color: #8dafb8;  
+    font-size: 70px;
+    line-height: 80px;
+    padding: 30px;
+}
+/*next game*/
+div.vs {
+    margin: 0;
+    padding: 30px 0 0;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+    background: #fff;
+}
+div.vs h4 { 
+    margin-top: 0;
+    text-align: center;
+    font-family: "AvenirNextLTPro Regular", Arial, Helvetica, sans-sefir;
+    font-weight: bold;
+    color: #546a67;  
+    font-size: 20px;
+    line-height: 20px;
+}
+div.vs div {
+    display: inline-block
+}
+.vs-next .square {
+    margin: 0;
+}
+div .vs-next { 
+    margin: 0 auto;
+    padding: 10px; 
+}
+.vs-next div:nth-of-type(2) {
+    padding: 0 30px;
+    font-family: "AvenirNextLTPro Bold", Arial, Helvetica, sans-sefir;
+    text-transform: uppercase;
+    font-size: 26px;
+    vertical-align: bottom;
+    color: #546a67;
+}
+.vs-point div {
+    margin: 30px 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 25px;
+}
+.vs-point div:first-child {
+    background: #c2c2c2;
+    margin-right: 5px;
+}
+.vs-point div:last-child {
+    background: #ebebeb;
+    margin-left: 5px;
 }
 
 /*right col*/
@@ -153,42 +264,109 @@ body {
     text-align: center;
     box-shadow: none;
     border-bottom: 1px solid #e6e6e6;
-}
+    border-top: 1px solid #e6e6e6;
+    background: #fff;
+} 
 #caption-table h2 {
-    font-family: "AvenirNextLTPro Medium";
+    font-family: "AvenirNextLTPro Medium", Arial, Helvetica, sans-sefir;
     color: #546a67;
     text-transform: uppercase;
     font-size: 24px;
     display: inline;
 }
- 
+#first-h {
+    color: #80af65 !important;
+}
 #table {
     border-left: 1px solid #e6e6e6;
 }
+#table-game {
+    background: #fff;
+    padding: 20px;
+    margin: 0;
+}
 .table { 
     width: auto !important;
-    margin: 20px auto;
+    margin: 0 auto;
+}
+.table td {
+    border: none !important;
+    text-align: center;
+    margin: 0 15px !important;
+    padding: 0 10px !important;
+    font-family: "AvenirNextLTPro Medium", Arial, Helvetica, sans-sefir;
+    color: #546a67;
+    font-size: 24px;
+    vertical-align: middle !important;
 }
 .table > thead > tr > th {
     border-bottom: none;
 }
+thead {
+    font-family: "AvenirNextLTPro Regular", Arial, Helvetica, sans-sefir;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+tbody td:first-child {
+    font-family: "AvenirNextLTPro Bold", Arial, Helvetica, sans-sefir;
+    color: #999;
+    font-size: 16px;
+    vertical-align: middle !important;
+}
+tbody td:last-child {
+    font-family: "AvenirNextLTPro Bold", Arial, Helvetica, sans-sefir;
+    color: #80af65;
+    font-size: 26px;
+    vertical-align: middle !important;
+}
+tbody td:nth-of-type(2) { 
+    display: inline-block;
+    text-align: center; 
+    vertical-align: middle !important;
+    line-height: 40px !important; 
+    margin-top: 10px !important;
+    font-family: "AvenirNextLTPro Bold", Arial, Helvetica, sans-sefir;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #fff;
+}
+tbody td:nth-of-type(3) { 
+    padding: 0 15px 0 10px!important;
+}
+tbody td:nth-of-type(4) { 
+    padding: 0 15px !important;
+}
+tbody td:nth-of-type(5) { 
+    padding: 0 15px !important;
+}
+tbody td:nth-of-type(6) { 
+    padding: 0 15px !important;
+}
 
 /*activity*/
-
+#accordion {
+    background: #fff !important;
+    border: 1px solid #e6e6e6;
+}
 .panel-heading {
     height: 100px;
     line-height: 100px;
     padding: 0;
     margin: 0;
     border-bottom: 1px solid #e6e6e6;
+    background: #fff !important;
 }
 .panel-group {
-    margin: 5px;
+    margin: 0;
+    background: #fff !important;
 }
 .panel-group .row { 
     padding: 0;
     box-shadow: none;
     margin: 0;
+    background: #fff !important;
 }
 .button-game {
     color: #808080;
@@ -198,7 +376,7 @@ body {
     line-height: 100px;
 }
 .button-game a {
-    font-family: "AvenirNextLTPro Regular";
+    font-family: "AvenirNextLTPro Regular", Arial, Helvetica, sans-sefir;
     font-size: 22px;
     width: 125px;
     height: 40px;
@@ -209,7 +387,7 @@ body {
     display: inline-block; 
 } 
 .panel-heading span {
-    font-family: "AvenirNextLTPro Medium";
+    font-family: "AvenirNextLTPro Medium", Arial, Helvetica, sans-sefir;
     font-size: 36px;
     color: #546a67;
     padding: 0 10px 0 0; 
@@ -225,7 +403,7 @@ body {
     border-radius: 5px;
     text-align: center;
     line-height: 40px;
-    font-family: "AvenirNextLTPro Bold";
+    font-family: "AvenirNextLTPro Bold", Arial, Helvetica, sans-sefir;
     text-transform: uppercase;
     font-size: 22px;
     color: #fff;
@@ -254,7 +432,7 @@ body {
 .time-game {
     text-align: right;
     line-height: 100px;
-    font-family: "AvenirNextLTPro Regular";
+    font-family: "AvenirNextLTPro Regular", Arial, Helvetica, sans-sefir;
     font-size: 26px;
     text-transform: uppercase;
     padding-right: 30px;
@@ -263,7 +441,7 @@ body {
     color: #f16a63;
 }
 .time-time {
-    font-family: "AvenirNextLTPro Regular";
+    font-family: "AvenirNextLTPro Regular", Arial, Helvetica, sans-sefir;
     font-size: 22px;
     text-transform: none;
     color: #ccc;
@@ -274,6 +452,7 @@ body {
 .panel-body {
     height: 100px;
     margin: 0;
+    background: #fff !important;
 }
 .panel-body row {
     margin: 0;
@@ -285,7 +464,7 @@ body {
     vertical-align: top;
     margin: 0;
     padding-left: 20px;
-    font-family: "AvenirNextLTPro Regular";
+    font-family: "AvenirNextLTPro Regular", Arial, Helvetica, sans-sefir;
     font-size: 20px;
     color: #8dafb8;
 }
@@ -295,14 +474,14 @@ body {
     text-align: center;
 }
 .score-game-in span {
-    font-family: "AvenirNextLTPro Medium";
+    font-family: "AvenirNextLTPro Medium", Arial, Helvetica, sans-sefir;
     font-size: 36px;
     color: #546a67;
     padding-right: 10px; 
     line-height: 40px;
 }
 .added span {
-    font-family: "AvenirNextLTPro Regular";
+    font-family: "AvenirNextLTPro Regular", Arial, Helvetica, sans-sefir;
     font-size: 18px;
     color: #8dafb8;
     margin: 0; 
@@ -314,7 +493,7 @@ body {
     display: inline;
     vertical-align: top;
     line-height: 30px;
-    font-family: "AvenirNextLTPro Bold";
+    font-family: "AvenirNextLTPro Bold", Arial, Helvetica, sans-sefir;
     font-size: 16px;
     text-transform: uppercase; 
     float: right; 
@@ -329,14 +508,104 @@ body {
 }
 
 /*media*/
- // Ландшафтный экран телефоны
-  @media (max-width: 480px) { ... }
+@media (max-width: 280px) { 
+      .score-game-big-left div:nth-of-type(2) {
+    padding: 0;
+      margin: 0;
+          font-size: 20px !important;
+       }
+     
+
+}
+  @media (max-width: 480px) { 
+    
+    #caption h1 {
+        padding: 0;
+        margin: 0 2px 0 0;
+        font-size: 16px;
+        line-height: 16px;
+    }
+      #caption img {
+        padding: 0;
+          margin: 0;
+      }
+      #caption a {
+        margin-right: 15px;
+        font-size: 1.5em;
+      }
+      #current-game span {
+          font-size: 60px;
+      }
+      .time-time-big {
+        font-size: 40px;
+      }
+       
+  .score-game-big-left div:nth-of-type(2) {
+    padding: 0;
+      margin: 0;
+       }
+      .score-game {
+          padding: 0 !important;
+          margin: 0 !important;
+      }
+      .button-game {
+          margin: 0; 
+      }
+       .btn-default {
+           width: 80px !important;
+           font-size: 16px !important;
+       }
+      .added span {
+          font-size: 16px !important;
+      }
+      .time-index {
+          font-size: 18px;
+      }
+      .time-time {
+          font-size: 18px !important;
+      }
+          .time-full{
+              display: none!important;
+          }
+       
+      .time-live{
+      font-size: 18px !important;
+      }
+  }
  
-  // От ландшафтного экрана телефона до потретного планшета
-  @media (max-width: 767px) { ... }
+  @media (max-width: 767px) { 
+      #caption h1 {
+        padding: 0;
+        margin: 0 10px 0 0;
+        font-size: 22px;
+        line-height: 30px;
+    } 
+      #current-game span {
+          font-size: 70px;
+      }
+      .time-time-big {
+        font-size: 50px;
+      }
+       .score-game-big-left div:nth-of-type(2) {
+    padding: 0 20px;
+       }
+     .added span {
+          font-size: 16px !important;
+      }
+      .time-full{
+        display: none!important;
+          }
+  }
  
-  // От портретного планшета до ландшафтного экрана и настольных дисплеев
-  @media (min-width: 768px) and (max-width: 979px) { ... }
+  @media (min-width: 768px) and (max-width: 979px) {
+     
+   #caption h1 {
+        padding: 0;
+        margin: 0 10px 0 0;
+        font-size: 32px;
+        line-height: 30px;
+    }
+     
+  }
  
-  // Большой дисплей
   @media (min-width: 1200px) { ... }

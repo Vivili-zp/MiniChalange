@@ -12,66 +12,91 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     
     <link href="styles.css" rel="stylesheet">
-
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <![endif]--> 
   </head>
   <body>
     <div class="navbar navbar-fixed-top">
-                    <div class="container">
-                            <div class="navbar-header">
-                                <img id="logo" src="images/logo.png" alt="logo">
-                                <div class="navbar-right" id="user">
-                                    <img id="avatar" src="#" alt=" ">
-                                    <span id="profile-logged-in">First Last</span>
-                                </div>
-                            </div>
+        <div class="container">
+            <div class="navbar-header">
+                <div class="row">
+                    <div class="col-lg-10 col-md-8 col-sm-6 col-xs-6">
+                        <img id="logo" src="images/logo.png" alt="logo">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6" id="user">
+                        <img id="avatar" src="#" alt=" ">
+                        <span id="profile-logged-in">First Last</span>
                     </div>
                 </div>
-                                   
-                
+            </div>
+        </div>
+    </div>
+              
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6" id="challenge">
+                <div class="col-lg-6 col-md-6" id="challenge">
                     <div id="caption">
-                        <img src="images/pole.png" alt="">
-                        <h1>mini challenge</h1>
-                        <span id="ask"><i class="fa fa-question-circle fa-lg"></i></span>
+                        <div class="row">
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <img src="images/pole.png" alt="">
+                                <h1>mini challenge</h1>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <a href="a" id="ask"><i class="fa fa-question-circle fa-lg"></i></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="title-game">
                         <h3>gurrent game</h3>
                     </div>
                     <div id="current-game">
-                        <div class="button-game-left"><a href="#" class="btn btn-default">game 23</a></div>
-                        <div class="score-game-big-left"><div class="square-big square-left-big square-green">d</div><span>0</span><span>-</span><span>0</span><div class="square-big square-right-big square-blue">a</div></div>
+                        <div class="button-game-left"><a href="#" class="btn btn-default">game 23</a></div><br>
+                        <div class="score-game-big-left">
+                            <div class="square-big square-left-big square-green">a</div>                               <div>
+                                <span>0</span><span class="point">-</span><span>0</span>
+                            </div>
+                            <div class="square-big square-right-big square-blue">b</div>
+                        </div><br>
+                        <div class="time-time-big">7:00</div>
                     </div>
                     <div class="title-game">
                         <h3>next game</h3>
                     </div>
-                    
-                    
- 
- 
+                    <div class="vs">
+                        <h4>If skore stands:</h4><br>
+                        <div class="vs-next">
+                            <div class="square square-red">c</div>
+                            <div>vs</div>
+                            <div class="square square-yellow">d</div>
+                        </div><br>
+                        <div class="vs-point">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6" id="table">    
+                
+                <div class="col-lg-6 col-md-6" id="table">    
                     <div id="caption-table">
                         <div class="row"> 
-                            <div class="col-xs-6"><h2>table</h2></div>
+                            <div class="col-xs-6"><h2 id="first-h">table</h2></div>
                             <div class="col-xs-6"><h2>teams</h2></div>
                         </div>
                     </div>
                         <div class="title-game">
                             <h3>table</h3>
                         </div>
-                        <div>
+                        <div id="table-game">
                             <table class="table table-condensed">
                                 <thead>
                                     <tr>
+                                        <th> </th>
                                         <th> </th>
                                         <th>p</th>
                                         <th>w</th>
@@ -82,7 +107,8 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>b</td>
+                                        <td>1</td>
+                                        <td class="square square-blue">b</td>
                                         <td>13</td>
                                         <td>10</td>
                                         <td>1</td>
@@ -90,7 +116,8 @@
                                         <td>8</td>
                                     </tr>
                                     <tr>
-                                        <td>a</td>
+                                        <td>2</td>
+                                        <td class="square square-green">a</td>
                                         <td>11</td>
                                         <td>5</td>
                                         <td>1</td>
@@ -98,15 +125,17 @@
                                         <td>16</td>
                                     </tr>
                                     <tr>
-                                        <td>d</td>
+                                        <td>3</td>
+                                        <td class="square square-yellow">d</td>
                                         <td>11</td>
                                         <td>8</td>
-                                        <td>10</td>
+                                        <td>7</td>
                                         <td>3</td>
                                         <td>12</td>
                                     </tr>
                                     <tr>
-                                        <td>c</td>
+                                        <td>4</td>
+                                        <td class="square square-red">c</td>
                                         <td>9</td>
                                         <td>2</td>
                                         <td>0</td>
@@ -278,8 +307,8 @@
                                     <div class="panel-heading" >
                                         <div class="row"> 
                                             <div class="col-xs-4 button-game"><a href="#collapse-18" data-parent="#accordion" data-toggle="collapse" class="btn btn-default panel-title">game 18</a></div>
-                                            <div class="col-xs-6 score-game"><div class="square square-left square-yellow">d</div><span>2</span><span>-</span><span>2</span><div class="square square-right square-green">a</div></div>
-                                            <div class="col-xs-2 time-game time-live">live</div>
+                                            <div class="col-xs-6 score-game"><div class="square square-left square-red">c</div><span>2</span><span>-</span><span>2</span><div class="square square-right square-blue">b</div></div>
+                                            <div class="col-xs-2 time-game time-time">21m</div>
                                         </div> 
                                     </div>
                                     <div id="collapse-18" class="panel-collapse collapse in">
@@ -330,7 +359,7 @@
                                         <div class="row"> 
                                             <div class="col-xs-4 button-game"><a href="#collapse-17" data-parent="#accordion" data-toggle="collapse" class="btn btn-default panel-title">game 17</a></div>
                                             <div class="col-xs-6 score-game"><div class="square square-left square-yellow">d</div><span>2</span><span>-</span><span>2</span><div class="square square-right square-green">a</div></div>
-                                            <div class="col-xs-2 time-game time-live">live</div>
+                                            <div class="col-xs-2 time-game time-time">35m</div>
                                         </div> 
                                     </div>
                                     <div id="collapse-17" class="panel-collapse collapse in">
@@ -380,8 +409,8 @@
                                     <div class="panel-heading" >
                                         <div class="row"> 
                                             <div class="col-xs-4 button-game"><a href="#collapse-16" data-parent="#accordion" data-toggle="collapse" class="btn btn-default panel-title">game 16</a></div>
-                                            <div class="col-xs-6 score-game"><div class="square square-left square-yellow">d</div><span>2</span><span>-</span><span>2</span><div class="square square-right square-green">a</div></div>
-                                            <div class="col-xs-2 time-game time-live">live</div>
+                                            <div class="col-xs-6 score-game"><div class="square square-left square-blue">b</div><span>2</span><span>-</span><span>2</span><div class="square square-right square-red">c</div></div>
+                                            <div class="col-xs-2 time-game time-time">1h18m</div>
                                         </div> 
                                     </div>
                                     <div id="collapse-16" class="panel-collapse collapse in">
@@ -437,5 +466,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.js"></script>
+ 
   </body>
 </html>
